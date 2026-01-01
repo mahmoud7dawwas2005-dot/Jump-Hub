@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Hop Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- إعلان البداية -->
+<div class="adScreen" id="startAd">
+  <h1>🔥 Sponsored Ad 🔥</h1>
+  <p>Best AI Game Ever</p>
+  <button onclick="closeStartAd()">Skip Ad</button>
+</div>
+
+<!-- شاشة البداية -->
+<div id="startScreen">
+  <h1>AI HOP</h1>
+  <button onclick="startGame()">START GAME</button>
+</div>
+
+<canvas id="game"></canvas>
+
+<div id="hud">
+  Score: <b id="score">0</b> |
+  High: <b id="high">0</b>
+</div>
+
+<!-- إعلان الموت -->
+<div class="adScreen" id="deathAd">
+  <h1>😵 You Died!</h1>
+  <p>Try Again After This Ad</p>
+  <button onclick="closeDeathAd()">Continue</button>
+</div>
+
+<!-- إعلان الفوز -->
+<div class="adScreen" id="winAd">
+  <h1>🏆 You Win!</h1>
+  <p>Congrats! Sponsored Message</p>
+  <button onclick="restart()">Restart</button>
+</div>
+
+<script src="audio.js"></script>
+<script src="ads.js"></script>
+<script src="ai.js"></script>
+<script src="game.js"></script>
+</body>
+  </html>
